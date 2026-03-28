@@ -30,7 +30,7 @@ const Navbar = () => {
                     <Button className='mx-2 cursor-pointer' variant="secondary"> <Upload /> Upload</Button>
                     <Button className='mx-2 cursor-pointer'>Export <Download /> </Button>
                 </div>
-                <div className=' bg-secondary w-px mx-2 h-5'></div>
+                <div className=' bg-secondary w-px mr-2 h-5'></div>
                 <div>
                     <Button className='mx-2 cursor-pointer' variant="secondary"><History /> </Button>
                 </div>
