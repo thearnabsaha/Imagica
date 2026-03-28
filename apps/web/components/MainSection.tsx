@@ -3,7 +3,7 @@ import React from 'react'
 
 const MainSection = () => {
     return (
-        <div className='h-full border border-amber-300 w-full flex flex-col justify-center items-center'>
+        <div className='h-full border border-accent w-full flex flex-col justify-center items-center bg-primary-foreground rounded-2xl'>
             <div className='text-center -translate-y-1/8'>
                 <h1 className='text-9xl'>A</h1>
                 <h3 className='text-2xl font-semibold'>Start Creating</h3>

@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div>
       <Navbar />
-      <div className="flex w-screen h-[90vh]">
+      <div className="flex w-screen h-[70vh]">
         <Sidebar />
         <MainSection />
       </div>

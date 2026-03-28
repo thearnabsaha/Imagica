@@ -8,7 +8,7 @@ import {
 } from "@workspace/ui/components/button-group"
 const Navbar = () => {
     return (
-        <div className='flex justify-around pt-5'>
+        <div className='flex justify-around py-5'>
             <div className='text-4xl'>Imagica.</div>
             <div className='flex justify-around mx-5 items-center'>
                 <div className='flex justify-around'>
