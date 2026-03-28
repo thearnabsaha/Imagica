@@ -31,29 +31,29 @@ app.get("/", (_req, res) => {
   res.json({ status: "ok", message: "Server is running" });
 });
 
-app.post("/signup", async (req, res) => {
-  const result = SignUpSchema.safeParse(req.body);
-  if (!result.success) {
-    res.status(400).json(result.error.format());
-    return;
-  }
+// app.post("/signup", async (req, res) => {
+//   const result = SignUpSchema.safeParse(req.body);
+//   if (!result.success) {
+//     res.status(400).json(result.error.format());
+//     return;
+//   }
 
-  try {
-    const user = await prisma.user.create({ data: result.data });
-    res.status(201).json({ id: user.id, username: user.username, email: user.email });
-  } catch (error) {
-    res.status(500).json({ error: "Failed to create user" });
-  }
-});
+//   try {
+//     const user = await prisma.user.create({ data: result.data });
+//     res.status(201).json({ id: user.id, username: user.username, email: user.email });
+//   } catch (error) {
+//     res.status(500).json({ error: "Failed to create user" });
+//   }
+// });
 
-app.post("/signin", (req, res) => {
-  const result = SignInSchema.safeParse(req.body);
-  if (!result.success) {
-    res.status(400).json(result.error.format());
-    return;
-  }
-  res.json({ message: "Validation passed", username: result.data.username });
-});
+// app.post("/signin", (req, res) => {
+//   const result = SignInSchema.safeParse(req.body);
+//   if (!result.success) {
+//     res.status(400).json(result.error.format());
+//     return;
+//   }
+//   res.json({ message: "Validation passed", username: result.data.username });
+// });
 
 app.listen(port, () =>
   console.log(`Server is running on port: ${port}`)
