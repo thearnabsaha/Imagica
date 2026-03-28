@@ -11,9 +11,7 @@ This is a **monorepo** -- a single repository that holds multiple apps and share
 | Folder | What it is | Port |
 |--------|-----------|------|
 | `apps/web` | Next.js frontend (server-side rendered) | 3000 |
-| `apps/viteWeb` | Vite + React frontend (single-page app) | 5173 |
 | `apps/expressWeb` | Express.js REST API | 5001 |
-| `apps/socketWeb` | WebSocket echo server | 4002 |
 
 Shared code lives in `packages/`:
 
@@ -22,8 +20,7 @@ Shared code lives in `packages/`:
 | `packages/ui` | Reusable React components (shadcn/ui, Button, Input, etc.) |
 | `packages/common` | Shared TypeScript types and Zod validation schemas |
 | `packages/backend-common` | Backend config (JWT secret, environment loading) |
-| `packages/sqlDb` | PostgreSQL database client (Prisma ORM) |
-| `packages/nosqlDb` | MongoDB database client (Mongoose) |
+| `packages/database` | PostgreSQL database client (Prisma ORM) |
 | `packages/eslint-config` | Shared ESLint rules for all packages |
 | `packages/typescript-config` | Shared TypeScript settings for all packages |
 
