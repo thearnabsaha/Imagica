@@ -1,0 +1,22 @@
+{
+  "name": "@workspace/sqldb",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./client": "./src/index.ts"
+  },
+  "scripts": {
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "db:studio": "prisma studio",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "@workspace/typescript-config": "workspace:*",
+    "prisma": "^6.8.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.8.2"
+  }
+}
